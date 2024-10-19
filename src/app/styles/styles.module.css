@@ -1,0 +1,47 @@
+.fisherImage{
+    z-index: 1;
+}
+.fisherImageContainer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.tintOverlay {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.pageBody {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textOverlay {
+    position: absolute; /* Position text on top */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    text-align: left; /* Center text */
+    z-index: 3; /* Ensure text is above the overlay */
+    white-space: nowrap; /* Prevent wrapping */
+    min-width: 100%; /* Ensure minimum width to fit the text */
+    margin-left: 1lh;
+}
+.pageContent {
+    background-color: #C21111; /* Scarlet background */
+    padding: 2em; /* Add some padding */
+}
+
+.card {
+    background-color: white; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1.5em; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 1em auto; /* Center the card and add margin */
+    max-width: 600px; /* Set a maximum width for the card */
+}
