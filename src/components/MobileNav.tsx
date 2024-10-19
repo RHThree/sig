@@ -68,7 +68,7 @@ export const MobileNav: React.FC = () => {
             sx={{
               width: '100vw',
               height: '100vh',
-              backgroundColor: theme.palette.primary.main,
+              backgroundColor: theme.palette.primary.dark,
             }}
           >
             <Box
@@ -100,7 +100,7 @@ export const MobileNav: React.FC = () => {
             </IconButton>
             <MobileNavItem text="About" route="about" />
             <MobileNavItem text="Teams" route="teams" />
-            <MobileNavItem text="Board" route="board" />
+            <MobileNavItem text="EBoard" route="eboard" />
             <MobileNavItem text="Placement" route="placement" />
             <MobileNavItem text="Apply" route="apply" />
           </Box>
@@ -109,14 +109,14 @@ export const MobileNav: React.FC = () => {
       <Box
         flex={1}
         alignItems="center"
-        position="fixed"
+        position="sticky"
         sx={{
-          backgroundColor: theme.palette.primary.main,
+          backgroundColor: theme.palette.primary.dark,
           width: '100vw', // Full viewport width
           boxSizing: 'border-box', // Ensure padding/margin doesn't affect width
           display: 'flex',
           justifyContent: 'center', // Center content horizontally (optional)
-          py: '0.5rem', // Padding on y-axis
+          py: '1rem', // Padding on y-axis
           px: '2rem',
         }}
       >

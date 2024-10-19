@@ -48,14 +48,14 @@ export const Navbar: React.FC = () => {
       <Box
         flex={1}
         alignItems="center"
-        position='fixed'
+        position="sticky"
         sx={{
-          backgroundColor: '#db0000',
+          backgroundColor: theme.palette.primary.dark,
           width: '100vw', // Full viewport width
           boxSizing: 'border-box', // Ensure padding/margin doesn't affect width
           display: 'flex',
           justifyContent: 'center', // Center content horizontally (optional)
-          py: '0.5rem', // Padding on y-axis
+          py: '1rem', // Padding on y-axis
           px: '2rem',
         }}
       >
@@ -77,7 +77,7 @@ export const Navbar: React.FC = () => {
         <Stack direction="row" spacing={{ md: 2 }}>
           <Item text="About" route="about" />
           <Item text="Teams" route="teams" />
-          <Item text="Board" route="board" />
+          <Item text="EBoard" route="eboard" />
           <Item text="Placement" route="placement" />
           <Item text="Apply" route="apply" />
         </Stack>
