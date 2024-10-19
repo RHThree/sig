@@ -27,7 +27,7 @@ const roboto = Roboto({
     display: 'swap',
     variable: '--font-roboto',
   });
-export default function RootLayout(props) {
+export default function RootLayout(props:any) {
   const { children } = props;
   return (
     <html lang="en">
