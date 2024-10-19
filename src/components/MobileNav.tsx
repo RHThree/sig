@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Drawer,
-  Icon,
-  IconButton,
-  Slide,
-  SwipeableDrawer,
-} from '@mui/material';
+import { Box, Button, Drawer, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';
@@ -109,7 +101,6 @@ export const MobileNav: React.FC = () => {
       <Box
         flex={1}
         alignItems="center"
-        position="sticky"
         sx={{
           backgroundColor: theme.palette.primary.dark,
           width: '100vw', // Full viewport width

@@ -48,7 +48,6 @@ export const Navbar: React.FC = () => {
       <Box
         flex={1}
         alignItems="center"
-        position="sticky"
         sx={{
           backgroundColor: theme.palette.primary.dark,
           width: '100vw', // Full viewport width
