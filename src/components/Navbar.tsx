@@ -75,10 +75,11 @@ export const Navbar: React.FC = () => {
         </Box>
 
         <Stack direction="row" spacing={{ md: 2 }}>
-          <Item text="About" route="about"></Item>
-          <Item text="Teams" route="teams"></Item>
-          <Item text="Board" route="board"></Item>
-          <Item text="Placement" route="placement"></Item>
+          <Item text="About" route="about" />
+          <Item text="Teams" route="teams" />
+          <Item text="Board" route="board" />
+          <Item text="Placement" route="placement" />
+          <Item text="Apply" route="apply" />
         </Stack>
       </Box>
     </>
