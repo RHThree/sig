@@ -2,13 +2,12 @@
     z-index: 1;
 }
 .fisherImageContainer {
-    width: 100%;
-    height: auto;
+    height: 90vh;
     overflow: hidden;
     position: relative;
 }
 .tintOverlay {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #36363678;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,16 +31,68 @@
     min-width: 100%; /* Ensure minimum width to fit the text */
     margin-left: 1lh;
 }
-.pageContent {
-    background-color: #C21111; /* Scarlet background */
-    padding: 2em; /* Add some padding */
+
+.pageDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* This will distribute the items to fit the sides */
+}
+/* Media query for smaller screens */
+@media (max-width: 750px) {
+    .pageDiv {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
 }
 
-.card {
-    background-color: white; /* White background for the card */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1.5em; /* Padding inside the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 1em auto; /* Center the card and add margin */
-    max-width: 600px; /* Set a maximum width for the card */
+.pageDivLeft {
+    background-color: white;
+    flex: 1; /* This allows it to take up remaining space */
+    min-width: 200px; /* Optional: Minimum width */
+    color: black;
+    text-align: center;
+}
+
+.pageDivRight {
+    background-color: #C12222;
+    flex: 1; /* This allows it to take up remaining space */
+    min-width: 200px; /* Optional: Minimum width */
+}
+
+.homepageHeader{
+    margin-top: 4rem;
+}
+.homepageBody {
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 3rem;
+}
+
+.homepageCard {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3rem;
+    margin-bottom: 10vh;
+    max-height: 20rem;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+.homepageCardImage {
+    height: 60%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.homepageCardImage img {
+    max-height: 100%; /* Scale the image down to fit */
+    max-width: 100%; /* Scale the image down to fit */
+    object-fit: cover; /* Maintain aspect ratio and fill the box */
 }
