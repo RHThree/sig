@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
         flex={1}
         alignItems="center"
         sx={{
-          backgroundColor: theme.palette.primary.dark,
+          backgroundColor: theme.palette.primary.main,
           width: '100vw', // Full viewport width
           boxSizing: 'border-box', // Ensure padding/margin doesn't affect width
           display: 'flex',

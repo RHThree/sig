@@ -56,11 +56,13 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#db0000',
-      dark: '#c12222',
+      light: '#db0000',
+      main: '#c12222',
+      dark: '#a40000',
     },
     secondary: {
       main: '#fff',
+      contrastText: '#000',
     },
     grey: {
       100: '#f5f5f5',
