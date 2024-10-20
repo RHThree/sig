@@ -76,9 +76,9 @@ export default function Home() {
             <Box className={componentStyle.homepageHeader}>
               <Typography sx={{
                 fontSize: {
-                  xs: "1.3rem",
-                  sm: "1.8rem",
-                  md: "2.6rem",
+                  xs: "1.8rem",
+                  sm: "2.4rem",
+                  md: "3rem",
                   lg: "3.2rem",
                 },
                 fontFamily: "Poppins",
@@ -90,9 +90,9 @@ export default function Home() {
               <Box className={componentStyle.homepageBody}>
                 <Typography sx={{
                   fontSize: {
-                    xs: ".5rem",
-                    sm: ".7rem",
-                    md: ".9rem",
+                    xs: ".7rem",
+                    sm: ".9rem",
+                    md: "1rem",
                     lg: "1.2rem",
                   },
                   fontFamily: "Poppins",
@@ -105,9 +105,9 @@ export default function Home() {
               <Box className={componentStyle.homepageBody}>
                 <Typography sx={{
                   fontSize: {
-                    xs: ".5rem",
-                    sm: ".7rem",
-                    md: ".9rem",
+                    xs: ".7rem",
+                    sm: ".9rem",
+                    md: "1rem",
                     lg: "1.2rem",
                   },
                   fontFamily: "Poppins",
