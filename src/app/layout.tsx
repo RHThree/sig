@@ -7,6 +7,7 @@ import localFont from 'next/font/local';
 import theme from '../theme';
 import './globals.css';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -41,7 +42,11 @@ export default function RootLayout(props: any) {
     <html lang="en">
       <body className={poppins.variable}>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}><Header />{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
