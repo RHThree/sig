@@ -64,7 +64,6 @@ export const Footer = () => {
       >
         <PageLink to="" text="home" />
         <PageLink to="about" text="about" />
-        <PageLink to="teams" text="teams" />
         <PageLink to="eboard" text="eboard" />
         <PageLink to="placement" text="placement" />
         <PageLink to="apply" text="apply" />
