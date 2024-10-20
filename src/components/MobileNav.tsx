@@ -20,7 +20,7 @@ const MobileNavItem = (props: MobileNavItemProps) => {
         sx={{
           fontWeight: 'bold',
           fontSize: '2rem',
-          color: '#fff',
+          color: theme.palette.secondary.main,
           textDecoration: 'false',
           '&::after': {
             content: '""',
@@ -29,7 +29,7 @@ const MobileNavItem = (props: MobileNavItemProps) => {
             height: '3px',
             bottom: '0',
             left: 'auto',
-            backgroundColor: '#fff', // Color of the underline
+            backgroundColor: theme.palette.secondary.main, // Color of the underline
             transition: 'width 0.3s ease, left 0.3s ease', // Smooth transition for both width and position
           },
           '&:hover::after': {
