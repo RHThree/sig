@@ -1,13 +1,13 @@
 "use client";
     
 import ProjectCard from "@/components/homepageCard";
+import theme from "@/theme";
+import { ThemeProvider } from "@emotion/react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import componentStyle from './styles/styles.module.css';
 import fisherImage from "/public/fisher-image.jpg";
-import { ThemeProvider } from "@emotion/react";
-import theme from "@/theme";
 
 export default function Home() {
   return (

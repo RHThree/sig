@@ -21,41 +21,41 @@
     justify-content: center;
 }
 .textOverlay {
-    position: absolute; /* Position text on top */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position */
-    text-align: left; /* Center text */
-    z-index: 3; /* Ensure text is above the overlay */
-    white-space: nowrap; /* Prevent wrapping */
-    min-width: 100%; /* Ensure minimum width to fit the text */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: left; 
+    z-index: 3;
+    white-space: nowrap;
+    min-width: 100%;
     margin-left: 1lh;
 }
 
 .pageDiv {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* This will distribute the items to fit the sides */
+    justify-content: space-between; 
 }
-/* Media query for smaller screens */
+
 @media (max-width: 750px) {
     .pageDiv {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column;
     }
 }
 
 .pageDivLeft {
     background-color: white;
-    flex: 1; /* This allows it to take up remaining space */
-    min-width: 200px; /* Optional: Minimum width */
+    flex: 1; 
+    min-width: 200px;
     color: black;
     text-align: center;
 }
 
 .pageDivRight {
     background-color: #C12222;
-    flex: 1; /* This allows it to take up remaining space */
-    min-width: 200px; /* Optional: Minimum width */
+    flex: 1; 
+    min-width: 200px; 
 }
 
 .homepageHeader{
@@ -79,22 +79,25 @@
     flex-direction: column;
     justify-content: center;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .homepageCardImage {
-    height: 60%; /* Adjust as needed */
-    width: 100%; /* Adjust as needed */
+    height: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden; /* Ensures the image doesn't overflow the container */
-    display: flex; /* Use flex to center the image */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
 }
 
 .homepageCardImage img {
-    max-height: 100%; /* Scale the image down to fit */
-    max-width: 100%; /* Scale the image down to fit */
-    object-fit: cover; /* Maintain aspect ratio and fill the box */
+    max-height: 100%; 
+    max-width: 100%; 
+    object-fit: cover;
 }
 
 .eboardPage,
@@ -108,46 +111,45 @@
 }
 
 .eboardMemberGrid {
-    display: grid; /* Enable grid layout */
+    display: grid; 
     margin-top: 3rem;
-    grid-gap: 20px; /* Increase the space between grid items */
-    padding: 10px; /* Padding around the grid */
-    width: 70%; /* 70% width of the parent */
-    margin-left: auto; /* Center the grid */
-    margin-right: auto; /* Center the grid */
+    grid-gap: 20px;
+    padding: 10px;
+    width: 70%; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
-/* Responsive adjustments for different screen sizes */
 @media (min-width: 1200px) {
     .eboardMemberGrid {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens (1200px and up) */
+        grid-template-columns: repeat(4, 1fr); 
     }
 }
 
 @media (min-width: 1030px) and (max-width: 1199px) {
     .eboardMemberGrid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns between 1030px and 1200px */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 660px) and (max-width: 1029px) {
     .eboardMemberGrid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns between 660px and 1030px */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 659px) {
     .eboardMemberGrid {
-        grid-template-columns: 1fr; /* 1 column on very small screens (less than 660px) */
+        grid-template-columns: 1fr; 
     }
 }
 
 .companyLogosGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust to control the grid layout */
-    gap: 5rem; /* Spacing between logos */
-    margin-left: auto; /* Center the grid */
-    margin-right: auto; /* Center the grid */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5rem; 
+    margin-left: auto; 
+    margin-right: auto; 
     justify-items: center;
   }
 
@@ -157,6 +159,43 @@
     object-fit: contain;
     display: block;
     margin: 0 auto;
-    background-color: #f0f0f000; /* Optional: add a background color */
+    background-color: #f0f0f000; 
   }
 
+ /* about page */
+ .aboutDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Creates space between the sections */
+    align-items: stretch; /* Ensures all sections have the same height */
+    gap: 40px; /* Adds space between sections */
+    padding: 30px;
+    margin-bottom: 2%;
+  }
+  
+  .aboutDescriptionSection {
+    flex: 1; /* Ensures each section has equal width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .aboutStructure {
+    display: flex;
+    flex-direction: column;
+    background-color: #C12222;
+  }
+  .aboutStatistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Creates space between the sections */
+    align-items: stretch; /* Ensures all sections have the same height */
+    gap: 10px; /* Adds space between sections */
+    padding: 10px;
+    margin-bottom: 2%;
+  }
+  .aboutStatisticsSection {
+    flex: 1; /* Ensures each section has equal width */
+    padding: 10px;
+    background-color: #ffffff;
+  }
