@@ -151,7 +151,12 @@
     justify-items: center;
   }
 
-.logoImage {
-    padding: 1vh;
-}
+  .logoImage {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background-color: #f0f0f000; /* Optional: add a background color */
+  }
 

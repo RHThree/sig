@@ -23,6 +23,7 @@ export default function Placement() {
                 color: "#C12222",
                 marginTop: "2rem",
                 }}>
+                  Placement
             </Typography>
             <Box className={componentStyle.companyLogosGrid}>
                 <Image src="/Logos/Riverwest-Partners.jpg" alt="Company 1" width={250} height={150} className={componentStyle.logoImage} />
