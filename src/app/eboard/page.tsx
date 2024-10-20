@@ -67,7 +67,7 @@ export default function Eboard() {
                     name="Joey Slyh"
                     title="VP Marketing"
                     linkedinUrl="https://www.linkedin.com/in/josephslyh/"
-                    imageUrl="fisher-image.jpg"
+                    imageUrl="Joey.jpg"
                 ></MemberCard>
             </Box>
         </Box>
