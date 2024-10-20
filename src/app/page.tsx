@@ -115,15 +115,15 @@ export default function Home() {
                   color: "#4C4C4C",
                   marginBottom: "3rem",
                 }}>
-                  Scarlet Investment Group is a student-run organization at The Ohio State University that provides members with the opportunity to learn about investing and finance. Our goal is to provide a platform for students to learn about investing, network with industry professionals, and gain hands-on experience in the financial markets. We aim to create a community of like-minded individuals who are passionate about investing and finance.
+                  In 2023, Scarlet Investment Group was founded on a bus by a group of 3 students who were passionate about investing, finance, and math. Since then, the organization has grown to over 40 members and has hosted numerous events, workshops, and speakers. 
                 </Typography>
               </Box>
             </Box>
           </Box>
           <Box className = {componentStyle.pageDivRight}>
-            <ProjectCard imageUrl="fisher-image.jpg" description="This is a description for project1. Click Here to learn more.">
+            <ProjectCard imageUrl="BlackScholesImage.png" description="AU24: Implementing the Black Scholes Model for a Heatmap Project">
             </ProjectCard>
-            <ProjectCard imageUrl="fisher-image.jpg" description="This is a description for project2. Click Here to learn more.">
+            <ProjectCard imageUrl="PortfolioCompetition.png" description="AU24: Our analysts portfolio competition halfway through the semester">
             </ProjectCard>
           </Box>
         </Box>
