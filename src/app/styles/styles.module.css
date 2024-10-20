@@ -97,7 +97,8 @@
     object-fit: cover; /* Maintain aspect ratio and fill the box */
 }
 
-.eboardPage {
+.eboardPage,
+.companyLogosPage {
     background-color: white;
     height: 100%;
     width: 100%;
@@ -140,4 +141,22 @@
         grid-template-columns: 1fr; /* 1 column on very small screens (less than 660px) */
     }
 }
+
+.companyLogosGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust to control the grid layout */
+    gap: 5rem; /* Spacing between logos */
+    margin-left: auto; /* Center the grid */
+    margin-right: auto; /* Center the grid */
+    justify-items: center;
+  }
+
+  .logoImage {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background-color: #f0f0f000; /* Optional: add a background color */
+  }
 
