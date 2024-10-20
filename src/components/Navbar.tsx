@@ -75,7 +75,6 @@ export const Navbar: React.FC = () => {
 
         <Stack direction="row" spacing={{ md: 2 }}>
           <Item text="About" route="about" />
-          <Item text="Teams" route="teams" />
           <Item text="EBoard" route="eboard" />
           <Item text="Placement" route="placement" />
           <Item text="Apply" route="apply" />

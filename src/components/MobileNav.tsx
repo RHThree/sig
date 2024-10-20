@@ -91,7 +91,6 @@ export const MobileNav: React.FC = () => {
               <CloseIcon color="secondary" sx={{ fontSize: '3rem' }} />
             </IconButton>
             <MobileNavItem text="About" route="about" />
-            <MobileNavItem text="Teams" route="teams" />
             <MobileNavItem text="EBoard" route="eboard" />
             <MobileNavItem text="Placement" route="placement" />
             <MobileNavItem text="Apply" route="apply" />
