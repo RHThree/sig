@@ -96,3 +96,48 @@
     max-width: 100%; /* Scale the image down to fit */
     object-fit: cover; /* Maintain aspect ratio and fill the box */
 }
+
+.eboardPage {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.eboardMemberGrid {
+    display: grid; /* Enable grid layout */
+    margin-top: 3rem;
+    grid-gap: 20px; /* Increase the space between grid items */
+    padding: 10px; /* Padding around the grid */
+    width: 70%; /* 70% width of the parent */
+    margin-left: auto; /* Center the grid */
+    margin-right: auto; /* Center the grid */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (min-width: 1200px) {
+    .eboardMemberGrid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens (1200px and up) */
+    }
+}
+
+@media (min-width: 1030px) and (max-width: 1199px) {
+    .eboardMemberGrid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns between 1030px and 1200px */
+    }
+}
+
+@media (min-width: 660px) and (max-width: 1029px) {
+    .eboardMemberGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns between 660px and 1030px */
+    }
+}
+
+@media (max-width: 659px) {
+    .eboardMemberGrid {
+        grid-template-columns: 1fr; /* 1 column on very small screens (less than 660px) */
+    }
+}
+
