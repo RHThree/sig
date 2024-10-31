@@ -1,14 +1,7 @@
 'use client';
 
 import theme from '@/theme';
-import {
-  Box,
-  Button,
-  Divider,
-  Typography,
-  Stack,
-  IconButton,
-} from '@mui/material';
+import { Box, Divider, Typography, Stack, IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Link from 'next/link';
