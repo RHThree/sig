@@ -43,7 +43,14 @@ export const Footer = () => {
         pt: '2.5rem',
       }}
     >
-      <Typography variant="h2" sx={{ textAlign: 'center', py: '0.5rem' }}>
+      <Typography
+        variant="h2"
+        sx={{
+          textAlign: 'center',
+          py: '0.5rem',
+          color: theme.palette.secondary.main,
+        }}
+      >
         Scarlet Investment Group
       </Typography>
       <Stack
@@ -77,21 +84,37 @@ export const Footer = () => {
           p: '0.5rem',
         }}
       >
-        <Link href="https://www.instagram.com/scarletinvestmentgroup">
+        <Link
+          href="https://www.instagram.com/scarletinvestmentgroup"
+          target="_blank"
+        >
           <IconButton>
             <InstagramIcon color="secondary" sx={{ fontSize: '2.5rem' }} />
           </IconButton>
         </Link>
-        <Link href="https://www.linkedin.com/company/scarlet-investment-group">
+        <Link
+          href="https://www.linkedin.com/company/scarlet-investment-group"
+          target="_blank"
+        >
           <IconButton>
             <LinkedInIcon color="secondary" sx={{ fontSize: '2.5rem' }} />
           </IconButton>
         </Link>
       </Stack>
-      <Typography variant="body1" sx={{ textAlign: 'center', pt: '0.5rem' }}>
+      <Typography
+        variant="body1"
+        sx={{
+          textAlign: 'center',
+          pt: '0.5rem',
+          color: theme.palette.secondary.main,
+        }}
+      >
         sigeboard@buckeyemail.osu.edu
       </Typography>
-      <Typography variant="body1" sx={{ textAlign: 'center' }}>
+      <Typography
+        variant="body1"
+        sx={{ textAlign: 'center', color: theme.palette.secondary.main }}
+      >
         © 2024 Scarlet Investment Group
       </Typography>
     </Box>

@@ -21,10 +21,11 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: 'Scarlet Investment Group',
-  description: 'Premier Quantitative Finance and Investment Club at The Ohio State University',
+  description:
+    'Premier Quantitative Finance and Investment Club at The Ohio State University',
   icons: {
     icon: '/Logos/favicon.ico',
-  }
+  },
 };
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -44,6 +45,10 @@ export default function RootLayout(props: any) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" /> {/* Add favicon link */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet"
+        ></link>
       </head>
       <body className={poppins.variable}>
         <AppRouterCacheProvider>

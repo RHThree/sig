@@ -15,11 +15,11 @@
     height: 100%;
     z-index: 2;
 }
-.pageBody {
+/* .pageBody {
     display:flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 .textOverlay {
     position: absolute;
     top: 50%; 
@@ -58,9 +58,9 @@
     min-width: 200px; 
 }
 
-.homepageHeader{
+/* .homepageHeader{
     margin-top: 4rem;
-}
+} */
 .homepageBody {
     text-align: left;
     margin-top: 1.5rem;
@@ -68,12 +68,11 @@
     margin-right: 3rem;
 }
 
-.homepageCard {
+/* .homepageCard {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 3rem;
     margin-bottom: 10vh;
-    max-height: 20rem;
     height: auto;
     display:flex;
     flex-direction: column;
@@ -81,7 +80,7 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 .homepageCardImage {
     height: 60%;
     width: 100%;

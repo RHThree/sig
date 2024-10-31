@@ -1,7 +1,7 @@
 import componentStyle from '@/app/styles/styles.module.css';
-import { Box, Typography } from "@mui/material";
-import Image from "next/image";
-import React from "react";
+import { Box, Typography } from '@mui/material';
+import Image from 'next/image';
+import React from 'react';
 
 interface ProjectCardProps {
   description: string;
@@ -10,25 +10,29 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ description, imageUrl }) => {
   return (
-    <Box className={componentStyle.homepageCard}>
-      <Box className={componentStyle.homepageCardImage}>
-        <img
-          src={imageUrl || 'fisher-image.jpg'}
-          alt="Project image"
-        />
+    <Box
+      className={componentStyle.homepageCard}
+      sx={{
+        pt: '1rem',
+        pb: '0.5rem',
+        mx: { xs: '2rem', lg: '10%' },
+        my: { xs: '3rem', lg: '4rem' },
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        backgroundColor: 'white',
+        borderRadius: '10px',
+        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)',
+      }}
+    >
+      <Box className={componentStyle.homepageCardImage} sx={{ pb: '0.5rem' }}>
+        <img src={imageUrl || 'fisher-image.jpg'} alt="Project image" />
       </Box>
       <Typography
+        variant="h6"
         sx={{
-          fontSize: {
-            xs: ".5rem",
-            sm: ".7rem",
-            md: ".9rem",
-            lg: "1.2rem",
-          },
-          fontFamily: "Poppins",
-          fontWeight: "400",
-          color: "#4C4C4C",
-          marginLeft: "1.5rem",
+          color: '#4C4C4C',
+          mx: '1rem',
         }}
       >
         {description}
