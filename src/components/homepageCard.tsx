@@ -30,7 +30,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ description, imageUrl }) => {
       <Typography
         variant="h6"
         sx={{
-          color: '#4C4C4C',
           mx: '1rem',
         }}
       >
