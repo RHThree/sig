@@ -24,9 +24,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ description, imageUrl }) => {
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)',
       }}
     >
-      <Box className={componentStyle.homepageCardImage} sx={{ pb: '0.5rem' }}>
-        <img src={imageUrl || 'fisher-image.jpg'} alt="Project image" />
-      </Box>
+      <Box
+        component="img"
+        src={imageUrl || 'fisher-image.jpg'}
+        alt="Project image"
+        sx={{
+          pb: '0.5rem',
+          height: '60%',
+          width: '100%',
+          mx: 'auto',
+          overflow: 'hidden',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: '10px',
+          maxHeight: '100%',
+          maxWidth: '100%',
+          objectFit: 'cover',
+        }}
+      />
       <Typography
         variant="h6"
         sx={{
