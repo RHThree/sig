@@ -1,48 +1,54 @@
 import componentStyle from '@/app/styles/styles.module.css';
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box, IconButton, Typography } from '@mui/material';
+import Link from 'next/link';
+import React from 'react';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 interface MemberCardProps {
-    name: string;
-    title: string;
-    linkedinUrl: string;
-    imageUrl: string;
+  name: string;
+  title: string;
+  linkedinUrl: string;
+  imageUrl: string;
 }
 
-const MemberCard: React.FC<MemberCardProps> = ({ name, title, linkedinUrl, imageUrl }) => {
+const MemberCard: React.FC<MemberCardProps> = ({
+  name,
+  title,
+  linkedinUrl,
+  imageUrl,
+}) => {
   return (
     <Box>
-      <Box>
-        <img
-          src={imageUrl}
-          alt={name + " | " + title}
-          width="200px"
-          height="200px"
-          />
-      </Box>
+      <Box
+        component="img"
+        sx={{ width: '12.5rem', height: '12.5rem' }}
+        alt={`${name} | ${title}`}
+        src={imageUrl}
+      />
       <Typography
+        variant="body1"
         sx={{
-          fontSize: "1.2rem",
-          fontFamily: "Poppins",
-          fontWeight: "400",
-          color: "#4C4C4C",
-          marginTop: "0.8rem",
+          marginTop: '0.5rem',
         }}
       >
         {name}
       </Typography>
       <Typography
+        variant="body1"
         sx={{
-            fontSize: "1.2rem",
-            fontFamily: "Poppins",
-            fontWeight: "400",
-            color: "#4C4C4C",
-            marginTop: "0.8rem",
-            marginBottom: "3rem",
+          marginTop: '0.25rem',
         }}
       >
         {title}
       </Typography>
+      <Link href={linkedinUrl} target="_blank">
+        <IconButton>
+          <LinkedInIcon
+            color="inherit"
+            sx={{ fontSize: '3rem', color: '#0072b1' }}
+          />
+        </IconButton>
+      </Link>
     </Box>
   );
 };
