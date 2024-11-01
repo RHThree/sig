@@ -71,7 +71,7 @@ export const MobileNav: React.FC = () => {
                 justifyContent: 'center',
               }}
             >
-              <Link href="/">
+              <Link href="/" onClick={() => setOpen(false)}>
                 <img
                   src="/OriginalSigLogo.png"
                   alt="Logo"

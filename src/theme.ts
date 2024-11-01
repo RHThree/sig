@@ -6,52 +6,52 @@ const theme = createTheme({
   typography: {
     fontFamily: `'Poppins', sans-serif`,
     h1: {
-      fontFamily: `'Poppins', sans-serif`, // Optional, can be omitted if same as global
-      fontSize: '3rem', // Customize font size
+      fontSize: '3.5rem', // Customize font size
       fontWeight: 700, // Bold
       lineHeight: 1.2, // Adjust line height
+      color: '#4C4C4C',
     },
     h2: {
-      fontFamily: `'Poppins', sans-serif`, // Optional
-      fontSize: '2.5rem',
-      fontWeight: 600, // Semi-bold
+      fontSize: '3rem',
+      fontWeight: 700, // Semi-bold
       lineHeight: 1.3,
+      color: '#4C4C4C',
     },
     h3: {
-      fontFamily: `'Poppins', sans-serif`, // Optional
-      fontSize: '2rem',
+      fontSize: '2.5rem',
       fontWeight: 600,
       lineHeight: 1.4,
+      color: '#4C4C4C',
     },
     h4: {
-      fontFamily: `'Poppins', sans-serif`, // Optional
-      fontSize: '1.75rem',
+      fontSize: '2rem',
       fontWeight: 500,
       lineHeight: 1.5,
+      color: '#4C4C4C',
     },
     h5: {
-      fontFamily: `'Poppins', sans-serif`, // Optional
       fontSize: '1.5rem',
       fontWeight: 500,
       lineHeight: 1.6,
+      color: '#4C4C4C',
     },
     h6: {
-      fontFamily: `'Poppins', sans-serif`, // Optional
       fontSize: '1.25rem',
       fontWeight: 500,
       lineHeight: 1.7,
+      color: '#4C4C4C',
     },
     body1: {
-      fontFamily: `'Poppins', sans-serif`,
+      fontSize: '1.25rem',
+      fontWeight: 500,
+      lineHeight: 1.7,
+      color: '#4C4C4C',
+    },
+    body2: {
       fontSize: '1rem',
       fontWeight: 400,
       lineHeight: 1.8,
-    },
-    body2: {
-      fontFamily: `'Poppins', sans-serif`,
-      fontSize: '0.875rem',
-      fontWeight: 400,
-      lineHeight: 1.7,
+      color: '#4C4C4C',
     },
   },
   palette: {

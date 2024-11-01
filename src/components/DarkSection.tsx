@@ -20,15 +20,22 @@ export const DarkSection = (props: DarkSectionProps) => {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
+        color: theme.palette.secondary.main,
       }}
     >
-      <Typography variant="h1" sx={{ py: '1rem' }}>
+      <Typography variant="h1" sx={{ py: '1rem', color: 'inherit' }}>
         {props.header}
       </Typography>
-      <Typography variant="h4" sx={{ textAlign: 'center', py: '1rem' }}>
+      <Typography
+        variant="h4"
+        sx={{ textAlign: 'center', py: '1rem', color: 'inherit' }}
+      >
         {props.body}
       </Typography>
-      <Button variant="contained" sx={{ my: '1rem', fontSize: '1.5rem' }}>
+      <Button
+        variant="contained"
+        sx={{ my: '1rem', fontSize: '1.5rem', fontWeight: '600' }}
+      >
         <Link href="https://docs.google.com/forms/d/e/1FAIpQLScsSz0aP8nFifn27xJKr3t_rY6p5Fn31rfNUyrjwFdhDbsSWg/viewform?usp=sf_link">
           {props.buttonText}
         </Link>

@@ -2,111 +2,85 @@
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Image from 'next/image';
-import componentStyle from '/src/app/styles/styles.module.css';
 import theme from '@/theme';
+
+interface CompanyProps {
+  src: string;
+  alt: string;
+}
+
+const Company = (props: CompanyProps) => {
+  return (
+    <Box
+      component="img"
+      src={props.src}
+      alt={props.alt}
+      sx={{
+        width: '250px',
+        height: '150px',
+        objectFit: 'contain',
+        display: 'block',
+        m: '0 auto',
+      }}
+    />
+  );
+};
 
 export default function Placement() {
   return (
-    <div>
-      <header></header>
-      <main>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-          rel="stylesheet"
-        ></link>
-        <Box className={componentStyle.companyLogosPage}>
-          <Typography
-            sx={{
-              fontSize: {
-                xs: '3rem',
-                sm: '3rem',
-                md: '3.5rem',
-                lg: '3.5rem',
-              },
-              fontFamily: 'Poppins',
-              fontWeight: '700',
-              color: theme.palette.primary.main,
-              marginTop: '2rem',
-            }}
-          >
-            Placement
-          </Typography>
-          <Box className={componentStyle.companyLogosGrid}>
-            <Image
-              src="/Logos/Riverwest-Partners.jpg"
-              alt="Company 1"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Parker-Hannifin.png"
-              alt="Company 2"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/JP-Morgan-Chase.png"
-              alt="Company 3"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Immuta.png"
-              alt="Company 4"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Big-Kitty-Labs.png"
-              alt="Company 5"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Hackett-Consulting.png"
-              alt="Company 6"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Lockheed-Martin.png"
-              alt="Company 7"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Clearpact.png"
-              alt="Company 8"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/P&G.png"
-              alt="Company 9"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-            <Image
-              src="/Logos/Atwell.jpg"
-              alt="Company 10"
-              width={250}
-              height={150}
-              className={componentStyle.logoImage}
-            />
-          </Box>
+    <>
+      <Box
+        sx={{
+          backgroundColor: theme.palette.secondary.main,
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          textAlign: 'center',
+          p: '2rem',
+        }}
+      >
+        <Typography
+          variant="h1"
+          sx={{
+            color: theme.palette.primary.main,
+          }}
+        >
+          Placement
+        </Typography>
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: {
+              xs: '1fr',
+              sm: '1fr 1fr',
+              md: '1fr 1fr 1fr',
+              xl: '1fr 1fr 1fr 1fr',
+            },
+            gap: { xs: '2.5rem', md: '2.8rem', lg: '5rem' },
+            mx: 'auto',
+            justifyItems: 'center',
+            pt: '1rem',
+          }}
+        >
+          <Company
+            src="/Logos/Riverwest-Partners.jpg"
+            alt="Riverwest Partners"
+          />
+          <Company src="/Logos/Parker-Hannifin.png" alt="Parker Hannifin" />
+          <Company src="/Logos/JP-Morgan-Chase.png" alt="JP Morgan Chase" />
+          <Company src="/Logos/Immuta.png" alt="Immuta" />
+          <Company src="/Logos/Big-Kitty-Labs.png" alt="Big Kitty Labs" />
+          <Company
+            src="/Logos/Hackett-Consulting.png"
+            alt="The Hackett Group"
+          />
+          <Company src="/Logos/Lockheed-Martin.png" alt="Lockheed Martin" />
+          <Company src="/Logos/Clearpact.png" alt="Clearpact" />
+          <Company src="/Logos/P&G.png" alt="Procter & Gamble" />
+          <Company src="/Logos/Atwell.jpg" alt="Atwell" />
         </Box>
-      </main>
-      <footer></footer>
-    </div>
+      </Box>
+    </>
   );
 }
