@@ -95,11 +95,18 @@ export const Footer = () => {
         </Link>
       </Stack>
       <Typography
+        component="a"
         variant="body2"
+        href="mailto:sigeboard@buckeyemail.osu.edu"
         sx={{
+          display: 'flex',
+          justifyContent: 'center',
           textAlign: 'center',
           pt: '0.5rem',
           color: theme.palette.secondary.main,
+          '&:hover': {
+            color: theme.palette.grey[300],
+          },
         }}
       >
         sigeboard@buckeyemail.osu.edu
