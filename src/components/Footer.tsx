@@ -37,7 +37,7 @@ export const Footer = () => {
       }}
     >
       <Typography
-        variant="h2"
+        variant="h3"
         sx={{
           textAlign: 'center',
           py: '0.5rem',
@@ -95,7 +95,7 @@ export const Footer = () => {
         </Link>
       </Stack>
       <Typography
-        variant="body1"
+        variant="body2"
         sx={{
           textAlign: 'center',
           pt: '0.5rem',
@@ -105,7 +105,7 @@ export const Footer = () => {
         sigeboard@buckeyemail.osu.edu
       </Typography>
       <Typography
-        variant="body1"
+        variant="body2"
         sx={{ textAlign: 'center', color: theme.palette.secondary.main }}
       >
         © 2024 Scarlet Investment Group
