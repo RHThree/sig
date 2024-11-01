@@ -2,14 +2,14 @@
 
 import { DarkSection } from '@/components/DarkSection';
 import theme from '@/theme';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 interface QuestionProps {
   question: string;
   answer: string;
 }
 
-const Question = (props: { question: string; answer: string }) => {
+const Question = (props: QuestionProps) => {
   return (
     <>
       <Typography

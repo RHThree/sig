@@ -3,9 +3,7 @@
 import ValueCard from '@/components/ValueCard';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import componentStyle from '/src/app/styles/styles.module.css';
 import theme from '@/theme';
-import { palette } from '@mui/system';
 
 export default function About() {
   return (

@@ -3,8 +3,6 @@
 import MemberCard from '@/components/memberCard';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Image from 'next/image';
-import componentStyle from '/src/app/styles/styles.module.css';
 import theme from '@/theme';
 
 export default function Eboard() {
