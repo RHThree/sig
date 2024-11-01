@@ -99,16 +99,6 @@
     object-fit: cover;
 }
 
-/* .eboardPage, */
-.companyLogosPage {
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 .eboardMemberGrid {
     display: grid; 
     margin-top: 3rem;
