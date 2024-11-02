@@ -44,7 +44,7 @@ export default function Home() {
             zIndex: '3',
             whiteSpace: 'nowrap',
             minWidth: '100%',
-            ml: '1lh',
+            ml: '1rem',
           }}
         >
           <Typography
