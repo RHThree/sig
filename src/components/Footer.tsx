@@ -34,11 +34,11 @@ export const Footer = () => {
       sx={{
         backgroundColor: theme.palette.grey[500],
         width: '100vw',
-        pt: '2.5rem',
+        pt: '1.5rem',
       }}
     >
       <Typography
-        variant="h3"
+        variant="h4"
         sx={{
           textAlign: 'center',
           py: '0.5rem',
