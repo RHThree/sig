@@ -1,4 +1,3 @@
-import componentStyle from '@/app/styles/styles.module.css';
 import theme from '@/theme';
 import { Box, Typography } from '@mui/material';
 import React from 'react';

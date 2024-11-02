@@ -4,6 +4,7 @@ import ProjectCard from '@/components/homepageCard';
 import theme from '@/theme';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import React from 'react';
 
 export default function Home() {
   return (

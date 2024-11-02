@@ -4,6 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';
 import theme from '@/theme';
 import { useState } from 'react';
+import React from 'react';
 
 interface MobileNavItemProps {
   text: string;

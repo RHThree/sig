@@ -5,6 +5,7 @@ import { Box, Divider, Typography, Stack, IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Link from 'next/link';
+import React from 'react';
 
 interface PageLinkProps {
   text: string;

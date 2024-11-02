@@ -4,6 +4,7 @@ import ValueCard from '@/components/ValueCard';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import theme from '@/theme';
+import React from 'react';
 
 export default function About() {
   return (
@@ -77,12 +78,12 @@ export default function About() {
               marginTop: '1rem',
             }}
           >
-            Our members meet on a weekly basis to review market trends, research
+            {`Our members meet on a weekly basis to review market trends, research
             equities, and develop quantitative trading methods. For those
             working on fundamental investment teams, this means conducting
             research and performing financial analysis to pitch stocks for our
             fund. For those working on a quantitative teams, weekly meetings
-            consist of building out the components of our algorithms.
+            consist of building out the components of our algorithms.`}
           </Typography>
         </Box>
         <Box sx={{ pt: '2rem', pb: '3rem' }}>
@@ -118,12 +119,12 @@ export default function About() {
                 alignContent: 'center',
               }}
             >
-              As a quantitative organization, we have a strong belief that
+              {`As a quantitative organization, we have a strong belief that
               numbers can be insightful. Our club encourages members to achieve
               a strong academic performance in addition to their career goals.
               The College of Engineering average GPA is a 3.28, and Fisher's
               College of Business has an average GPA of 3.34. We are proud to
-              say that our members have an average GPA of 3.72.
+              say that our members have an average GPA of 3.72.`}
             </Typography>
             <Box
               sx={{

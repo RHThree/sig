@@ -3,6 +3,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import theme from '@/theme';
+import React from 'react';
 
 interface CompanyProps {
   src: string;

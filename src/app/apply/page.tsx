@@ -3,6 +3,7 @@
 import { DarkSection } from '@/components/DarkSection';
 import theme from '@/theme';
 import { Box, Typography } from '@mui/material';
+import React from 'react';
 
 interface QuestionProps {
   question: string;

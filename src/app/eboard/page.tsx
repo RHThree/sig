@@ -4,6 +4,7 @@ import MemberCard from '@/components/memberCard';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import theme from '@/theme';
+import React from 'react';
 
 export default function Eboard() {
   return (

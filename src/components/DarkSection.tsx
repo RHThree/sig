@@ -1,6 +1,7 @@
 import theme from '@/theme';
 import { Box, Button, Typography } from '@mui/material';
 import Link from 'next/link';
+import React from 'react';
 
 interface DarkSectionProps {
   header: string;
