@@ -99,7 +99,7 @@ export default function About() {
           <Box
             sx={{
               display: 'flex',
-              flexDirection: 'row',
+              flexDirection: { xs: 'column', sm: 'row' },
               justifyContent:
                 'space-between' /* Creates space between the sections */,
               alignItems:
@@ -135,7 +135,7 @@ export default function About() {
                 backgroundColor: theme.palette.secondary.main,
               }}
             >
-              <Box>
+              <Box sx={{ mb: { xs: '1.5rem', sm: '0rem' } }}>
                 <Typography
                   variant="h1"
                   sx={{
