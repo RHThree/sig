@@ -68,7 +68,7 @@ export default function Eboard() {
             imageUrl="Joey.jpeg"
           />
           <MemberCard
-            name="Jack Hunyh"
+            name="Jack Huynh"
             title="VP Membership Development"
             linkedinUrl="https://www.linkedin.com/in/jakcrushuynh/"
             imageUrl="Jack.jpg"

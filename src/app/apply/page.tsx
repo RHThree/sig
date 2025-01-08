@@ -80,7 +80,7 @@ export default function Apply() {
         header="Applications"
         body="Our Spring 2025 Application is now open! Applications are due by 11:59 PM on January 24th and require attendance of an info session. Click below to apply!"
         buttonText="Apply"
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSczXUmS1m_acWYXxd8mCbNDjC44YlsUiRc-01ylxGmtMsg8RQ/viewform"
+        buttonLink="https://forms.gle/JHoXryjjtg7CCQjW8"
       />
       <Box
         sx={{
