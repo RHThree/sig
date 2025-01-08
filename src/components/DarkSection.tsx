@@ -37,7 +37,7 @@ export const DarkSection = (props: DarkSectionProps) => {
         variant="contained"
         sx={{ my: '1rem', fontSize: '1.5rem', fontWeight: '600' }}
       >
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLScsSz0aP8nFifn27xJKr3t_rY6p5Fn31rfNUyrjwFdhDbsSWg/viewform?usp=sf_link">
+        <Link href={props.buttonLink} target="_blank">
           {props.buttonText}
         </Link>
       </Button>

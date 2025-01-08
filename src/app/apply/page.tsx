@@ -38,11 +38,9 @@ export default function Apply() {
     <>
       <DarkSection
         header="Applications"
-        body="We have completed our recruitment process for the Autumn 2024 Semester.
-        We encourge you to check back here at the start of the Spring 2025
-        Semester and apply!"
+        body="Our Spring 2025 Application is now open! Applications are due by 11:59 PM on January 24th. Click below to apply!"
         buttonText="Apply"
-        buttonLink=""
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSczXUmS1m_acWYXxd8mCbNDjC44YlsUiRc-01ylxGmtMsg8RQ/viewform"
       />
       <Box
         sx={{
