@@ -48,43 +48,55 @@ export default function Eboard() {
             title="President"
             linkedinUrl="https://www.linkedin.com/in/russelheiser"
             imageUrl="Russel.jpg"
-          ></MemberCard>
+          />
           <MemberCard
-            name="Ethan Savar"
+            name="Ryan Walsh"
+            title="Executive VP"
+            linkedinUrl="https://www.linkedin.com/in/ryan-walsh-088050305/"
+            imageUrl="Ryan.png"
+          />
+          <MemberCard
+            name="Cole Gibson"
             title="VP Quant"
-            linkedinUrl="https://www.linkedin.com/in/ethan-savar"
-            imageUrl="Ethan.jpeg"
-          ></MemberCard>
+            linkedinUrl="https://www.linkedin.com/in/cole-gibson5/"
+            imageUrl="Cole.jpg"
+          />
           <MemberCard
-            name="Luka Kresja"
-            title="Treasurer"
-            linkedinUrl="https://www.linkedin.com/in/luka-krejsa-a31918262/"
-            imageUrl="Luka.jpg"
-          ></MemberCard>
+            name="Joey Glukh"
+            title="VP Fundamental"
+            linkedinUrl="https://www.linkedin.com/in/josephglukh/"
+            imageUrl="Joey.jpeg"
+          />
           <MemberCard
-            name="Nathaniel Miller"
-            title="VP Recruitment"
-            linkedinUrl="https://www.linkedin.com/in/nathanielbmiller1/"
-            imageUrl="Nathaniel.jpg"
-          ></MemberCard>
-          <MemberCard
-            name="Reece Magers"
+            name="Jack Hunyh"
             title="VP Membership Development"
-            linkedinUrl="https://www.linkedin.com/in/reece-magers"
-            imageUrl="Reece.jpeg"
-          ></MemberCard>
+            linkedinUrl="https://www.linkedin.com/in/jakcrushuynh/"
+            imageUrl="Jack.jpg"
+          />
+          <MemberCard
+            name="Gabby Raney"
+            title="VP Marketing"
+            linkedinUrl="https://www.linkedin.com/in/gabriellaraney/"
+            imageUrl="Gabby.jpg"
+          />
+          <MemberCard
+            name="Quinn Moore"
+            title="VP Recruitment"
+            linkedinUrl="https://www.linkedin.com/in/quinn-moore-5a2ab523a/"
+            imageUrl="Quinn.png"
+          />
           <MemberCard
             name="Luke Schofield"
             title="VP Operations"
             linkedinUrl="https://www.linkedin.com/in/lukeschofield019"
             imageUrl="Luke.jpg"
-          ></MemberCard>
+          />
           <MemberCard
-            name="Joey Slyh"
-            title="VP Marketing"
-            linkedinUrl="https://www.linkedin.com/in/josephslyh"
-            imageUrl="Joey.jpg"
-          ></MemberCard>
+            name="Akshay Kollur"
+            title="Treasurer"
+            linkedinUrl="https://www.linkedin.com/in/akshaykollur/"
+            imageUrl="Akshay.jpeg"
+          />
         </Box>
       </Box>
     </>
