@@ -10,6 +10,46 @@ interface QuestionProps {
   answer: string;
 }
 
+interface RecruitmentEventProps {
+  title: string;
+  subtitle: string;
+  date: string;
+  time: string;
+  location: string;
+}
+
+const RecruitmentEvent = (props: RecruitmentEventProps) => {
+  return (
+    <>
+      <Typography
+        variant="h3"
+        sx={{
+          textAlign: 'center',
+          pt: '1rem',
+          px: { xs: '0rem', md: '4rem' },
+        }}
+      >
+        {props.date} - {props.title}
+      </Typography>
+      <Typography
+        variant="h5"
+        sx={{
+          textAlign: 'center',
+          px: { xs: '0rem', md: '4rem' },
+        }}
+      >
+        {props.time} @ {props.location}
+      </Typography>
+      <Typography
+        variant="h5"
+        sx={{ textAlign: 'center', px: { xs: '0rem', md: '4rem' }, pb: '1rem' }}
+      >
+        {props.subtitle}
+      </Typography>
+    </>
+  );
+};
+
 const Question = (props: QuestionProps) => {
   return (
     <>
@@ -38,12 +78,76 @@ export default function Apply() {
     <>
       <DarkSection
         header="Applications"
-        body="We have completed our recruitment process for the Autumn 2024 Semester.
-        We encourge you to check back here at the start of the Spring 2025
-        Semester and apply!"
+        body="Our Spring 2025 Application is now open! Applications are due by 11:59 PM on January 24th and require attendance of an info session. Click below to apply!"
         buttonText="Apply"
-        buttonLink=""
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSczXUmS1m_acWYXxd8mCbNDjC44YlsUiRc-01ylxGmtMsg8RQ/viewform"
       />
+      <Box
+        sx={{
+          color: theme.palette.secondary.contrastText,
+          backgroundColor: theme.palette.secondary.main,
+          p: '2rem',
+          py: '3rem',
+          pb: '0rem',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'left',
+          flexDirection: 'column',
+        }}
+      >
+        <Typography
+          variant="h1"
+          sx={{
+            color: theme.palette.primary.main,
+            textAlign: 'center',
+            width: '100%',
+          }}
+        >
+          Recruitment Timeline
+        </Typography>
+        <RecruitmentEvent
+          title="Info Session"
+          subtitle="Come join us and learn more about what SIG has to offer!"
+          date="1/13"
+          time="6:00 PM"
+          location="Hitchcock 030"
+        />
+        <RecruitmentEvent
+          title="Involvement Fair"
+          subtitle="Stop by our booth at the involvement fair and talk to some members!"
+          date="1/15"
+          time="4:00-7:00 PM"
+          location="Ohio Union"
+        />
+        <RecruitmentEvent
+          title="Info Session"
+          subtitle="Another opportunity to learn about SIG!"
+          date="1/16"
+          time="7:00 PM"
+          location="Lazenby 034"
+        />
+        <RecruitmentEvent
+          title="Info Session & Meet the Members"
+          subtitle="Learn about SIG and its members from our very own members!"
+          date="1/21"
+          time="7:00 PM"
+          location="Lazenby 002"
+        />
+        <RecruitmentEvent
+          title="Applications Due"
+          subtitle="Help us learn more about you through our application!"
+          date="1/24"
+          time="11:59 PM"
+          location="sigosu.com/apply"
+        />
+        <RecruitmentEvent
+          title="Interviews"
+          subtitle="Selected applicants will be invited to interview with us!"
+          date="1/28 - 1/30"
+          time="TBD"
+          location="KBK Center"
+        />
+      </Box>
       <Box
         sx={{
           color: theme.palette.secondary.contrastText,
