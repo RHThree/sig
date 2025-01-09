@@ -16,7 +16,7 @@ export const DarkSection = (props: DarkSectionProps) => {
       sx={{
         backgroundColor: theme.palette.primary.dark,
         p: '2rem',
-        px: { xs: '2rem', md: '6rem' },
+        px: { xs: '1rem', sm: '2rem', md: '6rem' },
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

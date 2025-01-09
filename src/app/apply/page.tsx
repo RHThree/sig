@@ -2,7 +2,7 @@
 
 import { DarkSection } from '@/components/DarkSection';
 import theme from '@/theme';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
 
 interface QuestionProps {
@@ -19,6 +19,9 @@ interface RecruitmentEventProps {
 }
 
 const RecruitmentEvent = (props: RecruitmentEventProps) => {
+  const thm = useTheme();
+  const smallScreen = useMediaQuery(thm.breakpoints.down('sm'));
+
   return (
     <>
       <Typography
@@ -29,7 +32,7 @@ const RecruitmentEvent = (props: RecruitmentEventProps) => {
           px: { xs: '0rem', md: '4rem' },
         }}
       >
-        {props.date} - {props.title}
+        {props.date} {smallScreen ? <br /> : ' - '} {props.title}
       </Typography>
       <Typography
         variant="h5"
@@ -86,7 +89,7 @@ export default function Apply() {
         sx={{
           color: theme.palette.secondary.contrastText,
           backgroundColor: theme.palette.secondary.main,
-          p: '2rem',
+          p: { xs: '1rem', sm: '2rem' },
           py: '3rem',
           pb: '0rem',
           display: 'flex',
@@ -103,7 +106,7 @@ export default function Apply() {
             width: '100%',
           }}
         >
-          Recruitment Timeline
+          Recruiting Timeline
         </Typography>
         <RecruitmentEvent
           title="Info Session"
@@ -152,7 +155,7 @@ export default function Apply() {
         sx={{
           color: theme.palette.secondary.contrastText,
           backgroundColor: theme.palette.secondary.main,
-          p: '2rem',
+          p: { xs: '1rem', sm: '2rem' },
           py: '3rem',
           display: 'flex',
           justifyContent: 'center',
