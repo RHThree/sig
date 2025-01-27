@@ -46,7 +46,7 @@ export default function About() {
           ></ValueCard>
           <ValueCard
             title="Professional Development"
-            description="We provide our student body with resources and opportunities to achieve their professional goals through through workshops, mock interviews, and hands on experience through projects and stock pitches."
+            description="We provide our student body with resources and opportunities to achieve their professional goals through workshops, mock interviews, and hands on experience through projects and stock pitches."
           ></ValueCard>
           <ValueCard
             title="Collaborative Community"
