@@ -42,8 +42,9 @@ export const RecruitmentTimeline = (props: IProps) => {
                     key={index}
                     title={event.title}
                     subtitle={event.subtitle}
-                    date={event.date}
-                    time={event.time}
+                    dateTime={event.dateTime}
+                    duration={event.duration}
+                    showDuration={event.showDuration}
                     location={event.location}
                 />
             ))}

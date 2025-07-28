@@ -1,60 +1,79 @@
 'use client';
 
 import React from 'react';
-import { OpenApplication } from '@/components/apply/OpenApplication';
+import { ApplicationPage } from '@/components/apply/ApplicationPage';
 import { IRecruitmentEvent } from '@/types/recruitment';
 import { IQuestion } from '@/types/common';
 
 export default function Apply() {
-    const semester = 'Spring 2025';
-    const dueDate = new Date('2025-01-24T23:59:00');
+    const semester = 'Autumn 2025';
+    const openDate = new Date('2025-08-24T00:00:00');
+    const dueDate = new Date('2025-09-12T23:59:59');
     const applyLink = 'https://forms.gle/JHoXryjjtg7CCQjW8';
     const recruitmentEvents: IRecruitmentEvent[] = [
-        {
-            title: 'Info Session',
-            subtitle:
-                'Come join us and learn more about what SIG has to offer!',
-            date: '1/13',
-            time: '6:00 PM',
-            location: 'Hitchcock 030',
-        },
         {
             title: 'Involvement Fair',
             subtitle:
                 'Stop by our booth at the involvement fair and talk to some members!',
-            date: '1/15',
-            time: '4:00-7:00 PM',
-            location: 'Ohio Union',
+            dateTime: new Date('2025-08-24T16:00:00'),
+            duration: 180,
+            location: 'Oval',
+        },
+        {
+            title: 'Info Session',
+            subtitle:
+                'Come join us and learn more about what SIG has to offer!',
+            dateTime: new Date('2025-08-28T18:00:00'),
+            duration: 60,
+            showDuration: false,
+            location: 'Houston Grove Room',
         },
         {
             title: 'Info Session',
             subtitle: 'Another opportunity to learn about SIG!',
-            date: '1/16',
-            time: '7:00 PM',
-            location: 'Lazenby 034',
+            dateTime: new Date('2025-09-02T18:00:00'),
+            duration: 60,
+            showDuration: false,
+            location: 'House 1874 Room',
+        },
+        {
+            title: 'Info Session',
+            subtitle: 'Last standalone info session!',
+            dateTime: new Date('2025-09-04T18:00:00'),
+            duration: 60,
+            showDuration: false,
+            location: 'Houston Grove Room',
         },
         {
             title: 'Info Session & Meet the Members',
             subtitle:
                 'Learn about SIG and its members from our very own members!',
-            date: '1/21',
-            time: '7:00 PM',
-            location: 'Lazenby 002',
+            dateTime: new Date('2025-09-09T19:00:00'),
+            duration: 60,
+            showDuration: false,
+            location: 'Houston 1874 Room',
+        },
+        {
+            title: 'Resume Workshop',
+            subtitle:
+                'Create or improve your resume with the help of our members!',
+            dateTime: new Date('2025-09-11T19:00:00'),
+            duration: 60,
+            showDuration: false,
+            location: 'Busch Valor Room',
         },
         {
             title: 'Applications Due',
             subtitle: 'Help us learn more about you through our application!',
-            date: '1/24',
-            time: '11:59 PM',
+            dateTime: new Date('2025-09-12T23:59:59'),
             location: 'sigosu.com/apply',
         },
         {
             title: 'Interviews',
             subtitle:
                 'Selected applicants will be invited to interview with us!',
-            date: '1/28 - 1/30',
-            time: 'TBD',
-            location: 'KBK Center',
+            dateTime: '9/17 - 9/19',
+            location: 'TBD',
         },
     ];
     const questions: IQuestion[] = [
@@ -69,8 +88,9 @@ export default function Apply() {
     ];
 
     return (
-        <OpenApplication
+        <ApplicationPage
             semester={semester}
+            openDate={openDate}
             dueDate={dueDate}
             applyLink={applyLink}
             recruitmentEvents={recruitmentEvents}

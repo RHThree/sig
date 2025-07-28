@@ -37,18 +37,6 @@ export const RecruitmentQuestions = (props: IProps) => {
             {props.questions.map((q, index) => (
                 <Question key={index} question={q.question} answer={q.answer} />
             ))}
-            <Question
-                question={'What does the application process look like?'}
-                answer={
-                    'Prior to the application deadline, there are info sessions, networking opportunities, and a resume workshop. The application itself requires a resume, some responses to questions, and general info about yourself. If selected to move on after the application, you will undergo an interview process. Decisions will be made shortly after.'
-                }
-            />
-            <Question
-                question={'What do you look for in an applicant?'}
-                answer={
-                    "Although we don't require strict experience in finance/investing, we do look for a passion for learning and a willingness to work hard. We also look for strong communication skills as it is very important to be able to explain your ideas as an interdisciplinary orgnaization. For those interested in the quant side, we highly prefer coding experience as many of our projects are hands-on."
-                }
-            />
         </Box>
     );
 };
