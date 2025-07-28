@@ -14,20 +14,26 @@ type DateOnlyRecruitmentEvent = Omit<IRecruitmentEvent, 'dateTime'> & {
 export const AddToCalendar = (props: DateOnlyRecruitmentEvent) => {
     const { dateTime, duration, title, subtitle, location } = props;
 
+    const isAllDay = !duration;
+
     const event: EventAttributes = {
-        start: [
-            dateTime.getFullYear(),
-            dateTime.getMonth() + 1, // Month is 0-indexed in JavaScript
-            dateTime.getDate(),
-            dateTime.getHours(),
-            dateTime.getMinutes(),
-        ],
-        ...(duration
-            ? { duration: { minutes: duration } }
-            : { duration: { days: 1 } }), // 👈 default to all day if no duration
-        title: title,
+        start: isAllDay
+            ? [
+                  dateTime.getFullYear(),
+                  dateTime.getMonth() + 1,
+                  dateTime.getDate(),
+              ]
+            : [
+                  dateTime.getFullYear(),
+                  dateTime.getMonth() + 1,
+                  dateTime.getDate(),
+                  dateTime.getHours(),
+                  dateTime.getMinutes(),
+              ],
+        duration: { minutes: duration },
+        title,
         description: subtitle,
-        location: location,
+        location,
         status: 'CONFIRMED',
         busyStatus: 'BUSY',
     };
