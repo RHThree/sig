@@ -9,7 +9,7 @@ export default function Apply() {
     const semester = 'Autumn 2025';
     const openDate = new Date('2025-08-24T00:00:00');
     const dueDate = new Date('2025-09-12T23:59:59');
-    const applyLink = 'https://forms.gle/JHoXryjjtg7CCQjW8';
+    const applyLink = 'https://forms.gle/NQkb6XdJvnjBhoL56';
     const recruitmentEvents: IRecruitmentEvent[] = [
         {
             title: 'Involvement Fair',
