@@ -31,7 +31,7 @@ export default function Apply() {
         {
             title: 'Info Session',
             subtitle: 'Another opportunity to learn about SIG!',
-            dateTime: new Date('2025-09-02T18:00:00'),
+            dateTime: new Date('2025-09-02T19:00:00'),
             duration: 60,
             showDuration: false,
             location: 'House 1874 Room',
